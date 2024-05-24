@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор калорий</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <h1>Калькулятор калорий</h1>
+    <div id="warning">
+        <p id="calorie-warning"></p>
+    </div>
+    <div id="app">
+        <div id="add-product">
+            <h2>Добавить продукт</h2>
+            <input type="text" id="product-name" placeholder="Название продукта">
+            <input type="number" id="calories" placeholder="Калории">
+            <button id="add-button">Добавить</button>
+        </div>
+        <div id="daily-intake">
+            <h2>Дневная норма</h2>
+            <input type="number" id="daily-goal" placeholder="Дневная норма калорий">
+        </div>
+        <div id="product-list">
+            <h2>Список продуктов</h2>
+            <input type="text" id="filter" placeholder="Фильтр по названию">
+            <button id="sort-button">Сортировать по калорийности</button>
+            <button id="clear-button">Очистить данные</button>
+            <ul id="product-items"></ul>
+        </div>
+        <div id="daily-summary">
+            <h2>Сводка за день</h2>
+            <p id="total-calories">Итого калорий: 0</p>
+            <p id="remaining-calories">Осталось калорий: 0</p>
+        </div>
+        <div id="calories-chart">
+            <div class="chart-bar">
+                <div class="bar-label">Потреблено</div>
+                <div class="bar" id="consumed-bar"></div>
+            </div>
+            <div class="chart-bar">
+                <div class="bar-label">Осталось</div>
+                <div class="bar" id="remaining-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
